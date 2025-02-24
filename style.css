@@ -1,0 +1,95 @@
+:root {
+  --primary-purple: #7C19EE;
+  --secondary-purple: #F2EAFD;
+  --gray: #E5EAF0;
+  --secondary-light: #FAFAF9;
+  --primary-light: #FFFFFF;
+  --primary-dark: #20293A;
+  --secondary-dark: #394150;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--secondary-light);
+  font-family: "Sora", serif;
+}
+
+.card-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 8px 8px 20px 0px rgba(85, 85, 85, 0.08);
+}
+
+.image {
+  height: 200px;
+  background-image: url("./resources/Cactus@2x.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.tag {
+  margin: 1rem 0;
+}
+
+.tag span {
+  padding: 0.4rem 1rem;
+  background-color: var(--secondary-purple);
+  color: var(--primary-purple);
+  font-size: 0.625rem;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+.title {
+  font-size: 1.125rem;
+  color: var(--primary-dark);
+  margin: 1rem 0;
+}
+
+.body {
+  font-size: 0.875rem;
+  color: var(--secondary-dark);
+}
+
+.divider {
+  border-top: 2px solid var(--gray);
+  margin: 1rem 0;
+}
+
+.author {
+  font-size: 0.75rem;
+  color: var(--secondary-dark);
+  margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  .card {
+    width: 50%;
+  }
+
+  .image {
+    background-image: url("./resources/Cactus.jpg");
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    width: 40%;
+  }
+}
